@@ -1,0 +1,61 @@
+---
+const { name, price, img } = Astro.props;
+---
+
+<article class="card-product flex">
+    <div class="flex__info">
+        <h2>{name} <span class="price-product"> Precio: {price} €</span></h2>
+        <div class="counter-product">
+            <output><span data-output={name}>00</span>€</output>
+        </div>
+    </div>
+    <div>
+        <picture class="pic-product">
+            <img src={img} alt="" />
+        </picture>
+        <div data-product={name} class="counter">
+            <button type="button" class="btn-counter" data-btn-type="plus"
+                >&#43</button
+            >
+            <span class="display-counter" data-quantity>00</span>
+            <button type="button" class="btn-counter" data-btn-type="minor"
+                >&#45</button
+            >
+        </div>
+    </div>
+</article>
+
+<style>
+
+    .card-product {
+        min-height: 150px;
+        position: relative;
+        padding: 1rem;
+        background-color: white;
+        background-image: none;
+        background-size: 400%;
+        border-radius: 0.6rem;
+        background-position: 100%;
+        transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -2px rgba(0, 0, 0, 0.1);
+    }
+    .btn-counter {
+        width: 3rem;
+        height: 3rem;
+        font-size: 1.5rem;
+        border-radius: 9999em;
+        background-color: var(--color-primary);
+        color: var(--color-white);
+    }
+
+    .btn-counter {
+        cursor: pointer;
+        transition: 0.1s ease;
+        border-width: 0;
+    }
+
+    .btn-counter:active {
+        transform: translateY(4px);
+    }
+</style>

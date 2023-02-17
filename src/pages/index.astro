@@ -8,7 +8,9 @@ import Ticket from "../components/Ticket.astro";
 <Layout title="Cafe/Bar La Fontanina">
 	<main>
 		<h1><span class="text-gradient">La Fontanina</span></h1>
-		<button type="button" data-clear-ticket>Borrar Ticket</button>
+		<button type="button" data-clear-ticket class="bg-lf-brown-200 px-8 py-2 rounded-lg mb-4 text-lg w-full">
+			Borrar Ticket
+		</button>
 		<ul class="list-of-products">
 			{
 				listOfProducts.map((product) => (

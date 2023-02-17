@@ -1,32 +1,19 @@
 ---
 ---
 
-<section class="ticket">
+<section
+    class="text-white ticket fixed z-[200] bottom-4 left-4 min-h[90px] p-2 bg-lf-green bg-[400%] rounded-xl flex items-center flex-row justify-between w-11/12"
+>
     <h2>Ticket</h2>
-    <output class="text-gradient total-price"><span data-ticket >00</span>€</output>
+    <output class="total-price"><span data-ticket>00</span>€</output>
 </section>
 
 <style>
     .ticket {
-        position: fixed;
-        z-index: 200;
-        bottom: var(--margin);
-        left: var(--margin);
-        min-height: var(--min-height-ticket);
-        padding: 0.5rem;
-        background-color: white;
-        background-image: none;
-        background-size: 400%;
-        border-radius: 0.6rem;
         background-position: 100%;
         transition: background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1);
         box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
             0 2px 4px -2px rgba(0, 0, 0, 0.1);
-        width: calc(100% - var(--margin) * 3);
-        display: flex;
-        align-items: center;
-        flex-direction: row;
-        justify-content: space-between;
     }
     .total-price {
         font-size: 3rem;

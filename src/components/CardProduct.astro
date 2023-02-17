@@ -2,31 +2,36 @@
 const { name, price, img } = Astro.props;
 ---
 
-<article class="card-product flex">
-    <div class="flex__info">
-        <h2>{name} <span class="price-product"> Precio: {price} €</span></h2>
-        <div class="counter-product">
-            <output><span data-output={name}>00</span>€</output>
+<article class="card-product flex flex-col">
+    <div class="flex justify-between">
+        <div>
+            <h2 class="text-2xl font-bold">{name}</h2>
+            <span class="price-product"> Precio: {price} €</span>
+            <div class="counter-product">
+                <output><span data-output={name}>00</span>€</output>
+            </div>
         </div>
-    </div>
-    <div>
-        <picture class="pic-product">
-            <img src={img} alt="" />
+
+        <picture class="flex justify-end">
+            <img class="rounded-full w-12 h-12" src={img} alt="" />
         </picture>
-        <div data-product={name} class="counter">
-            <button type="button" class="btn-counter" data-btn-type="plus"
-                >&#43</button
-            >
-            <span class="display-counter" data-quantity>00</span>
-            <button type="button" class="btn-counter" data-btn-type="minor"
-                >&#45</button
-            >
-        </div>
+    </div>
+
+    <div
+        data-product={name}
+        class="counter flex justify-end space-x-5 items-center"
+    >
+        <button type="button" class="btn-counter" data-btn-type="plus">
+            &#43
+        </button>
+        <span class="display-counter text-lg" data-quantity>00</span>
+        <button type="button" class="btn-counter" data-btn-type="minor">
+            &#45
+        </button>
     </div>
 </article>
 
 <style>
-
     .card-product {
         min-height: 150px;
         position: relative;
@@ -41,8 +46,8 @@ const { name, price, img } = Astro.props;
             0 2px 4px -2px rgba(0, 0, 0, 0.1);
     }
     .btn-counter {
-        width: 3rem;
-        height: 3rem;
+        width: 2.6rem;
+        height: 2.6rem;
         font-size: 1.5rem;
         border-radius: 9999em;
         background-color: var(--color-primary);

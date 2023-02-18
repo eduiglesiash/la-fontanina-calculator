@@ -58,7 +58,7 @@ const activityBtn = (evt) => {
     const counterDisplay =
         evt.target.parentElement.querySelector("[data-quantity]");
     const displayTotalPriceProduct =
-        evt.target.parentElement.parentElement.parentElement.querySelector("output span");
+        evt.target.parentElement.parentElement.querySelector("output span");
     let valueStorage = Number(calculatorStorage.getItem(product));
 
     // console.log({ product, btnType, valueStorage });

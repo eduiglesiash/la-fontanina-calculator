@@ -15,6 +15,7 @@ const getValueProductFromLocaStorage = (product, displayCounter) => {
     const value = Number(calculatorStorage.getItem(product));
     displayCounter.innerText = value;
 };
+
 const calculateTicket = () => {
     let ticketValue = 0;
     keyValuesCalculator.forEach((key) => {
@@ -26,11 +27,13 @@ const calculateTicket = () => {
     });
     calculatorStorage.setItem(KEY_TICKET, `${ticketValue}`);
 };
+
 const displayValueTicket = () => {
     const ticketOutput = document.querySelector("[data-ticket]");
     const ticketValue = calculatorStorage.getItem(KEY_TICKET);
     ticketOutput.innerHTML = ticketValue;
 };
+
 const calculatePriceProduct = (product, displayPriceProduct) => {
     const { price } = listOfProducts.find(
         (element) => element.name === product
@@ -39,6 +42,7 @@ const calculatePriceProduct = (product, displayPriceProduct) => {
     // console.log({ price, numberProduct });
     displayPriceProduct.innerText = (price * numberProduct).toFixed(2);
 };
+
 const getQuantityOfLocalStorage = (elements) => {
     // console.log({elements});
     [...elements].forEach((element) => {
@@ -46,12 +50,14 @@ const getQuantityOfLocalStorage = (elements) => {
         getValueProductFromLocaStorage(product, element);
     });
 };
+
 const addButtonFn = (callbackBtn) => {
     const allButtons = document.querySelectorAll("[data-btn-type]");
     allButtons.forEach((button) =>
         button.addEventListener("click", callbackBtn)
     );
 };
+
 const activityBtn = (evt) => {
     const { product } = evt.target.parentElement.dataset;
     const { btnType } = evt.target.dataset;

@@ -12,8 +12,8 @@ const { name, price, img } = Astro.props;
             </div>
         </div>
 
-        <picture class="flex justify-end">
-            <img class="rounded-full w-12 h-12" src={img} alt="" />
+        <picture class="flex justify-end relative h-full">
+            <img class="rounded-full w-12 h-12 z-0" src={img} alt="" />
         </picture>
     </div>
 
@@ -24,7 +24,7 @@ const { name, price, img } = Astro.props;
         <button type="button" class="btn-counter" data-btn-type="plus">
             &#43
         </button>
-        <span class="display-counter text-lg" data-quantity>00</span>
+        <span class="display-counter text-lg font-bold" data-quantity>00</span>
         <button type="button" class="btn-counter" data-btn-type="minor">
             &#45
         </button>

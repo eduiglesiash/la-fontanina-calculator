@@ -55,6 +55,10 @@ const listOfProducts = [
 		name: "Chupito en vaso de tubo", price: 2,
 		img: "./img/chupito.webp"
 	},
+	{
+		name: "Postres", price: 3,
+		img: "./img/helado-de-flan.webp"
+	},
 ];
 
 export default listOfProducts

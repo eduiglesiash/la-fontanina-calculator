@@ -9,7 +9,7 @@ const listOfProducts = [
 	},
 	{
 		name: "Tosta de Jamón Ibérico con AVOE", price: 5,
-		img: "./img/tosta-jamon.jpeg"
+		img: "./img/tosta-jamon.jpefg"
 	},
 	{
 		name: "Tosta de Atún con pimientos asados", price: 4,

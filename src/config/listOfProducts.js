@@ -8,6 +8,22 @@ const listOfProducts = [
 		img: "./img/sandwich.jpg"
 	},
 	{
+		name: "Tosta de Jamón Ibérico con AVOE", price: 5,
+		img: "./img/tosta-jamon.jpeg"
+	},
+	{
+		name: "Tosta de Atún con pimientos asados", price: 4,
+		img: "./img/tosta-atun-pimientos.webp"
+	},
+	{
+		name: "Tostas de revuelto de gulas", price: 6,
+		img: "./img/tosta-gulas.jpeg"
+	},
+	{
+		name: "Tostas de solomillo de cerdo con rulo de cabra", price: 7,
+		img: "./img/tosta-solomillo.jpeg"
+	},
+	{
 		name: "Delicicas de pollo", price: 7,
 		img: "./img/delicias-pollo.jpg"
 	},

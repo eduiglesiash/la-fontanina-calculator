@@ -4,8 +4,12 @@ const listOfProducts = [
 		img: "./img/hamburguesa.jpeg"
 	},
 	{
-		name: "Sandwich", price: 4,
-		img: "./img/sandwich.jpg"
+		name: "Perrito", price: 3,
+		img: "./img/perrito-caliente.jpg"
+	},
+	{
+		name: "Bacalao a la dorada", price: 6,
+		img: "./img/bacalao-dorada.jpg"
 	},
 	{
 		name: "Tosta de Jamón Ibérico con AVOE", price: 5,
@@ -20,7 +24,7 @@ const listOfProducts = [
 		img: "./img/tosta-gulas.jpeg"
 	},
 	{
-		name: "Tostas de solomillo de cerdo con rulo de cabra", price: 7,
+		name: "Tostas de solomillo de cerdo con rulo de cabra", price: 8,
 		img: "./img/tosta-solomillo.jpeg"
 	},
 	{

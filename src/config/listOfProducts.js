@@ -4,11 +4,7 @@ const listOfProducts = [
 		img: "./img/hamburguesa.jpeg"
 	},
 	{
-		name: "Sandwich mixto", price: 3,
-		img: "./img/sandwich.jpg"
-	},
-	{
-		name: "Sandwich Mixto con huevo", price: 4,
+		name: "Sandwich", price: 4,
 		img: "./img/sandwich.jpg"
 	},
 	{
@@ -107,7 +103,7 @@ const listOfProducts = [
 		img: "./img/patatas-alioli.webp"
 	},
 	{
-		name: "Refresco", price: 1.6,
+		name: "Refresco", price: 2,
 		img: "./img/refrescos.jpg"
 	},
 	{
@@ -115,7 +111,7 @@ const listOfProducts = [
 		img: "./img/agua.jpg"
 	},
 	{
-		name: "Cerveza", price: 1.2,
+		name: "Cerveza", price: 1.6,
 		img: "./img/aguila-clasic.jpg"
 	},
 	{
@@ -123,7 +119,7 @@ const listOfProducts = [
 		img: "./img/copa-vino.jpg"
 	},
 	{
-		name: "Copa", price: 4,
+		name: "Copa", price: 4.2,
 		img: "./img/cubata.jpg"
 	},
 	{

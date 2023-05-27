@@ -4,7 +4,11 @@ const listOfProducts = [
 		img: "./img/hamburguesa.jpeg"
 	},
 	{
-		name: "Sandwich", price: 4,
+		name: "Sandwich mixto", price: 3,
+		img: "./img/sandwich.jpg"
+	},
+	{
+		name: "Sandwich Mixto con huevo", price: 4,
 		img: "./img/sandwich.jpg"
 	},
 	{
@@ -20,8 +24,63 @@ const listOfProducts = [
 		img: "./img/tosta-gulas.jpeg"
 	},
 	{
-		name: "Tostas de solomillo de cerdo con rulo de cabra", price: 7,
+		name: "Tostas de solomillo de cerdo con rulo de cabra", price: 8,
 		img: "./img/tosta-solomillo.jpeg"
+	},
+	{
+		name: "Mollete de Jamón Ibérico con aceite o tomate triturado", 
+		price: 3.5,
+		img: ""
+	},
+	{
+		name: "Mollete de Chorizo Ibérico o Salchichón Ibérico", 
+		price: 3.5,
+		img: ""
+	},
+	{
+		name: "Mollete de York/Queso Harvati", 
+		price: 3.5,
+		img: ""
+	},
+	{
+		name: "Extra Queso Semicurado", 
+		price: 1.5,
+		img: ""
+	},
+	{
+		name: "Extra Huevo frito", 
+		price: 1,
+		img: ""
+	},
+	{
+		name: "Mollete de Tortilla Francesa", 
+		price: 3.5,
+		img: ""
+	},
+	{
+		name: "Extra Atún", 
+		price: 1,
+		img: ""
+	},
+	{
+		name: "Extra York", 
+		price: .80,
+		img: ""
+	},
+	{
+		name: "Extra Queso", 
+		price: .80,
+		img: ""
+	},
+	{
+		name: "Mollete de atún con pimientos asados", 
+		price: 3.5,
+		img: ""
+	},
+	{
+		name: "Mollete de pechuga de pollo con tomate natural y queso semicurado", 
+		price: 5,
+		img: ""
 	},
 	{
 		name: "Delicicas de pollo", price: 7,

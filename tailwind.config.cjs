@@ -9,7 +9,6 @@ module.exports = {
 				'lf-blue': '#6EC1E4',
 				'lf-black': '#2E2E39',
 				'lf-green': '#63633F'
-
 			}
 		},
 	},

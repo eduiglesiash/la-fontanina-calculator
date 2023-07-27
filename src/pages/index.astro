@@ -6,51 +6,51 @@ import Ticket from "../components/Ticket.astro";
 ---
 
 <Layout title="Cafe/Bar La Fontanina">
-	<main>
-		<h1><span class="text-gradient">La Fontanina</span></h1>
-		<button
-			type="button"
-			data-clear-ticket
-			class="bg-lf-brown-200 px-8 py-2 rounded-lg mb-4 text-lg w-full"
-		>
-			Borrar Ticket
-		</button>
-		<ul class="list-of-products">
-			{
-				listOfProducts.map((product) => (
-					<li>
-						<CardProduct
-							name={product.name}
-							price={product.price}
-							img={product.img}
-						/>
-					</li>
-				))
-			}
-		</ul>
-		<Ticket />
-	</main>
+  <main>
+    <h1><span class="text-gradient">La Fontanina</span></h1>
+    <button
+      type="button"
+      data-clear-ticket
+      class="bg-lf-brown-200 px-8 py-2 rounded-lg mb-4 text-lg w-full"
+    >
+      Borrar Ticket
+    </button>
+    <ul class="list-of-products">
+      {
+        listOfProducts.map((product) => (
+          <li>
+            <CardProduct
+              name={product.name}
+              price={product.price}
+              img={product.img}
+            />
+          </li>
+        ))
+      }
+    </ul>
+    <Ticket />
+  </main>
 </Layout>
 
 <style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-		padding-bottom: calc(var(--min-height-ticket) + 30px);
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
+  main {
+    margin: auto;
+    padding: 1.5rem;
+    max-width: 60ch;
+    padding-bottom: calc(var(--min-height-ticket) + 30px);
+  }
+  h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin: 0;
+  }
 
-	.list-of-products {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+  .list-of-products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
+    gap: 1rem;
+    padding: 0;
+  }
 </style>
 
 <script src="../js/calculator.js"></script>

@@ -1,0 +1,34 @@
+---
+const { options, prices } = Astro.props;
+import {convertToEuropeanFormat} from '../js/utils.js'
+---
+
+<table>
+  <thead>
+    <tr>
+      {options.map((value) => <th>{value}</th>)}
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      {prices.map((priceValue) => <td class="price">{convertToEuropeanFormat(priceValue)}</td>)}
+    </tr>
+  </tbody>
+</table>
+
+<style>
+  table {
+    text-align: center;
+  }
+  table tr th{
+    padding: 0 10px;
+    font-size: 24px;
+    font-weight:300;
+    font-style: oblique;
+  }
+  .price{
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+</style>

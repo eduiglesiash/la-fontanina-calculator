@@ -1,0 +1,46 @@
+---
+const { product, price, detail, options, extra } = Astro.props;
+
+import TablePrice from "../components/TablePrice.astro";
+import { convertToEuropeanFormat } from "../js/utils.js";
+---
+
+<article class="shadow-lg ">
+  <div class:list={['flex sm:flex-row justify-between gap-x-8 ', { 'flex-col gap-': options }]}>
+    <div>
+      <h3>{product}</h3>
+      <p class="detail">{detail}</p>
+    </div>
+    {
+      options === undefined ? (
+        <p class="price flex-grow-1 flex-shrink-0">
+          {convertToEuropeanFormat(price)}
+        </p>
+      ) : (
+        <TablePrice options={options} prices={price} />
+      )
+    }
+  </div>
+  { extra && (<p class="font-extralight text-sm text-center italic">{extra}</p>)}
+</article>
+
+<style>
+  article {
+    border-radius: 6px;
+    padding: 12px 24px;
+    background-color: white;
+  }
+  h3 {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .price {
+    font-size: 30px;
+    font-weight: bolder;
+  }
+  .detail {
+    font-size: 18px;
+    font-weight: lighter;
+    text-decoration: double;
+  }
+</style>
